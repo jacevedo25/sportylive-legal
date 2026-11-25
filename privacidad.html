@@ -21,13 +21,13 @@
 <main>
   <nav><a href="privacy.html" hreflang="en">English</a><a href="terminos.html">Términos de uso de la versión beta</a></nav>
   <h1>Política de privacidad de la versión beta</h1>
-  <p class="meta">24 de noviembre de 2026 · versión 2026-11-24.2</p>
+  <p class="meta">25 de noviembre de 2026 · versión 2026-11-25.1</p>
   <p class="note">Esta política describe cómo trata SportyLive tus datos durante la beta y los compromisos vigentes mientras dure. Está publicada en https://legal.sportylive.app/privacidad.</p>
   <section>
     <h2>Qué es SportyLive y quién es responsable</h2>
     <p>SportyLive es una app para preparar y transmitir partidos con un marcador integrado. El responsable de SportyLive es Josué Acevedo Carrión.</p>
     <p>Para consultas de privacidad, solicitudes sobre tus datos, preguntas o quejas, escribe a support@sportylive.app.</p>
-    <p>SportyLive no tiene cuentas propias: no te registras ni creas una contraseña de SportyLive.</p>
+    <p>SportyLive no tiene registro de usuarios: no creas una cuenta ni una contraseña de SportyLive, tampoco para la anotación remota. Si usas la anotación remota, la app crea una identidad anónima en Supabase, sin correo, nombre ni contraseña, que puedes borrar desde Ajustes.</p>
     <ul>
       <li><a href="mailto:support@sportylive.app">support@sportylive.app</a></li>
     </ul>
@@ -46,14 +46,20 @@
     <h2>Para qué se usa</h2>
     <p>Para mostrar el marcador, guardar y recuperar tus partidos y ajustes, transmitir al destino que eliges, conectar tu canal, crear y gestionar los directos según tus acciones, recuperar una transmisión interrumpida y permitir la anotación remota.</p>
     <p>Los datos de Google y YouTube se usan solo para esas funciones de canal, flujo y directos. SportyLive no vende datos, no los usa para publicidad ni para rastrearte entre apps.</p>
+    <p>Los datos de Google y YouTube que recibe la app se guardan en este teléfono. La app los usa en las comunicaciones necesarias con Google y YouTube para iniciar sesión, consultar tu canal y gestionar los directos. No los envía a los servidores de SportyLive. El uso y la transferencia a cualquier otra app de la información recibida de las API de Google se ajustan a la Política de datos de usuario de los servicios de API de Google, incluidos los requisitos de uso limitado.</p>
+    <p>El componente de inicio de sesión de Google (Google Sign-In), incluido en la app, se comunica directamente con Google. Su manifiesto de privacidad, publicado por Google, declara datos vinculados a tu identidad y sin rastreo. Para el funcionamiento: nombre, correo, número de teléfono, ubicación aproximada, identificador de usuario y otros datos. Para analítica: identificador de usuario, identificador del dispositivo, otros datos de uso y otros datos. Ese tratamiento lo rige la Política de privacidad de Google.</p>
+    <p>Anuncios, contenido de terceros y cookies: SportyLive no muestra anuncios. El único contenido de terceros dentro de la app es la ventana de inicio de sesión, que sirve Google. SportyLive no tiene cookies propias ni usa tecnologías para rastrearte, pero intervienen cookies de terceros con fines técnicos: la ventana de inicio de sesión usa las cookies de Google, compartidas con Safari en este teléfono, y las respuestas de los servidores de Supabase, que pasan por Cloudflare, incluyen una cookie técnica de protección frente a abusos (__cf_bm) que caduca tras 30 minutos de inactividad.</p>
     <p>SportyLive usa los Servicios de la API de YouTube. El permiso que muestra Google es amplio (ver, editar y eliminar contenido de YouTube); SportyLive no lee, edita ni borra vídeos, comentarios ni subtítulos. Solo puede eliminar un directo creado por la propia app que nunca emitió, tras sus comprobaciones de seguridad.</p>
+    <ul>
+      <li><a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a></li>
+    </ul>
   </section>
   <section>
     <h2>Dónde se guarda y quién lo recibe</h2>
     <p>En este teléfono: partidos, ajustes y logos. En el Llavero de iOS: la clave del destino manual, la sesión de Google (la guarda el propio componente de Google) y los registros de directos de YouTube.</p>
     <p>Google y YouTube reciben las solicitudes de autorización y de gestión del canal y los directos, y, cuando transmites a YouTube, la imagen, el sonido y el gráfico.</p>
     <p>El proveedor del destino manual recibe la señal y la clave cuando lo eliges.</p>
-    <p>Supabase recibe los datos de la anotación remota descritos arriba y los guarda en servidores de Estados Unidos (Ohio). Solo los ven los teléfonos vinculados a ese partido. El administrador de SportyLive solo ve recuentos de borrados pendientes, nunca datos de personas ni de partidos.</p>
+    <p>Supabase recibe los datos de la anotación remota descritos arriba y los guarda en servidores de Estados Unidos (Ohio). Solo los ven los teléfonos vinculados a ese partido. La sección «Administración» de la app solo muestra recuentos de borrados del anotador remoto (atascados, sin terminar o sin anotar en el registro) y su antigüedad, sin datos de personas ni de partidos.</p>
     <p>Durante la beta, los comentarios y diagnósticos que envíes con TestFlight los gestiona Apple.</p>
     <p>Los espectadores ven el directo según la visibilidad elegida. «No listado» no es «Privado»: quien tenga el enlace puede verlo.</p>
     <ul>
@@ -62,7 +68,7 @@
   </section>
   <section>
     <h2>Conservación y eliminación</h2>
-    <p>Datos de YouTube en este teléfono (copia del canal y registros de directos): se eliminan si YouTube no los confirma durante 30 días. La app los elimina al abrirse, antes de mostrarlos o usarlos; mientras la app está cerrada no puede eliminarlos, pero solo están en este teléfono y no se envían a ningún sitio.</p>
+    <p>Datos de YouTube en este teléfono (copia del canal y registros de directos): se eliminan si YouTube no los confirma durante 30 días. La app los elimina al abrirse, antes de mostrarlos o usarlos; mientras la app está cerrada no puede eliminarlos, pero siguen guardados solo en este teléfono y no se envían a los servidores de SportyLive.</p>
     <p>Si Google responde que la autorización ya no es válida (por ejemplo, porque la retiraste desde tu cuenta de Google), la app elimina en ese momento los datos de ese canal en este teléfono.</p>
     <p>«Desconectar YouTube» retira la autorización en Google y elimina los datos de ese canal en este teléfono. Antes te avisa de los directos que podrían seguir abiertos y te ofrece finalizarlos; si no se pueden finalizar, tendrás que gestionarlos en YouTube Studio.</p>
     <p>«Quitar solo de este teléfono» borra la sesión de Google en el teléfono, pero la autorización sigue en tu cuenta de Google hasta que la retires.</p>

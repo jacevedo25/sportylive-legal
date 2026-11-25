@@ -21,13 +21,13 @@
 <main>
   <nav><a href="privacidad.html" hreflang="es">Español</a><a href="terms.html">Terms of use for the beta version</a></nav>
   <h1>Privacy policy for the beta version</h1>
-  <p class="meta">24 November 2026 · version 2026-11-24.2</p>
+  <p class="meta">25 November 2026 · version 2026-11-25.1</p>
   <p class="note">This policy describes how SportyLive handles your data during the beta and the commitments in force while it lasts. It is published at https://legal.sportylive.app/privacy.</p>
   <section>
     <h2>What SportyLive is and who is responsible</h2>
     <p>SportyLive is an app to prepare and stream games with an integrated scoreboard. The person responsible for SportyLive is Josué Acevedo Carrión.</p>
     <p>For privacy questions, requests about your data, questions or complaints, write to support@sportylive.app.</p>
-    <p>SportyLive has no accounts of its own: you do not sign up or create a SportyLive password.</p>
+    <p>SportyLive has no user sign-up: you do not create a SportyLive account or password, not even for remote scoring. If you use remote scoring, the app creates an anonymous identity in Supabase, with no email, name or password, which you can delete from Settings.</p>
     <ul>
       <li><a href="mailto:support@sportylive.app">support@sportylive.app</a></li>
     </ul>
@@ -46,14 +46,20 @@
     <h2>What it is used for</h2>
     <p>To show the scoreboard, keep and recover your games and settings, stream to the destination you choose, connect your channel, create and manage broadcasts as you act, recover an interrupted broadcast and allow remote scoring.</p>
     <p>Google and YouTube data are used only for those channel, stream and broadcast features. SportyLive does not sell data or use it for advertising or to track you across apps.</p>
+    <p>The Google and YouTube data the app receives are kept on this phone. The app uses them in the communications with Google and YouTube needed to sign in, check your channel and manage broadcasts. It does not send them to SportyLive's servers. SportyLive's use and transfer to any other app of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+    <p>The Google sign-in component (Google Sign-In) included in the app communicates directly with Google. Its privacy manifest, published by Google, declares data linked to your identity and not used for tracking. For app functionality: name, email, phone number, approximate location, user ID and other data. For analytics: user ID, device ID, other usage data and other data. That processing is governed by the Google Privacy Policy.</p>
+    <p>Ads, third-party content and cookies: SportyLive shows no ads. The only third-party content inside the app is the sign-in window, served by Google. SportyLive has no cookies of its own and uses no technology to track you, but third-party cookies are involved for technical purposes: the sign-in window uses Google's cookies, shared with Safari on this phone, and the responses from Supabase's servers, which go through Cloudflare, include a technical anti-abuse cookie (__cf_bm) that expires after 30 minutes of inactivity.</p>
     <p>SportyLive uses the YouTube API Services. The permission Google shows is broad (see, edit and delete YouTube content); SportyLive does not read, edit or delete videos, comments or captions. It can only delete a broadcast created by the app itself that never streamed, after its safety checks.</p>
+    <ul>
+      <li><a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a></li>
+    </ul>
   </section>
   <section>
     <h2>Where it is kept and who receives it</h2>
     <p>On this phone: games, settings and logos. In the iOS Keychain: the manual destination key, the Google session (kept by Google's own component) and the YouTube broadcast records.</p>
     <p>Google and YouTube receive the authorization and channel and broadcast management requests and, when you stream to YouTube, the picture, sound and graphic.</p>
     <p>The manual destination provider receives the signal and the key when you choose it.</p>
-    <p>Supabase receives the remote scoring data described above and keeps it on servers in the United States (Ohio). Only the phones paired to that game see it. SportyLive's administrator only sees counts of pending deletions, never data about people or games.</p>
+    <p>Supabase receives the remote scoring data described above and keeps it on servers in the United States (Ohio). Only the phones paired to that game see it. The app's «Administration» section only shows counts of remote scoring deletions (stuck, unfinished or not yet recorded in the log) and their age, with no data about people or games.</p>
     <p>During the beta, feedback and diagnostics you send with TestFlight are handled by Apple.</p>
     <p>Viewers see the broadcast according to the chosen visibility. «Unlisted» is not «Private»: anyone with the link can watch it.</p>
     <ul>
@@ -62,7 +68,7 @@
   </section>
   <section>
     <h2>Retention and deletion</h2>
-    <p>YouTube data on this phone (copy of the channel and broadcast records): deleted if YouTube does not confirm it for 30 days. The app deletes it when it opens, before showing or using it; while the app is closed it cannot delete it, but it is only on this phone and is not sent anywhere.</p>
+    <p>YouTube data on this phone (copy of the channel and broadcast records): deleted if YouTube does not confirm it for 30 days. The app deletes it when it opens, before showing or using it; while the app is closed it cannot delete it, but it stays stored only on this phone and is not sent to SportyLive's servers.</p>
     <p>If Google answers that the authorization is no longer valid (for example, because you removed it from your Google account), the app deletes that channel's data on this phone at that moment.</p>
     <p>«Disconnect YouTube» revokes the authorization at Google and deletes that channel's data on this phone. Before, it tells you about broadcasts that might still be open and offers to end them; if they cannot be ended, you will need to manage them in YouTube Studio.</p>
     <p>«Remove from this phone only» deletes the Google session on the phone, but the authorization stays in your Google account until you remove it.</p>
